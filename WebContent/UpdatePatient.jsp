@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Form Dashboards</title>
+<title>Update Patient</title>
 <!-- Bootstrap CSS -->
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -378,7 +378,7 @@ input[type=text], input[type=number], input[type=textarea], input[type=date],
 									maxlength="6" />
 								<hr>
 								<label for="contact"></label>
-								<form:input path="contactNumber" type="number"
+								<form:input path="contactNumber" type="text"
 									name="contactNumber" id="contactNumber"
 									placeholder="Contact Number"
 									value="<%=pojo.getContactNumber()%>" required="required"
@@ -389,7 +389,7 @@ input[type=text], input[type=number], input[type=textarea], input[type=date],
 								<label for="altcontact"></label>
 								<form:input path="alternateContactNumber" type="number"
 									name="alternateContactNumber" id="alternateContactNumber"
-									placeholder="Alternate Contact Number (if any)"
+									placeholder="Alternate Contact Number (if any, else type '0' if not required)"
 									value="<%=pojo.getAlternateContactNumber()%>"
 									pattern="[0-9]{10,}"
 									title="Don't include '0', should contain '10' digits only"

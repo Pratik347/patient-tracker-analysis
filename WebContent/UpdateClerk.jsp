@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Form Dashboards</title>
+<title>Update Clerk</title>
 <!-- Bootstrap CSS -->
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -391,8 +391,8 @@ input[type=text], input[type=number], input[type=textarea], input[type=date],
 									required="required" />
 								<hr>
 								<label for="altcontact"></label>
-								<form:input path="alternateContactNumber" type="text"
-									placeholder="Alternate Contact Number"
+								<form:input path="alternateContactNumber" type="number"
+									placeholder="Alternate Contact Number (if any, else type '0' if not required)"
 									name="alternateContactNumber" id="alternateContactNumber"
 									pattern="[0-9]{10,}"
 									title="Don't begin with '0', should contain '10' digits only"
